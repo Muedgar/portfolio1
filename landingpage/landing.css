@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.no-margin-full-size {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+#landing-page {
+    position: relative;
+}
+#landing-page-background-1 {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(103,190,113);
+}
+#landing-page-background-2 {
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 87vw;
+    height: 100vh;
+}
+#landing-page-background-2-canvas {
+    width: 100%;
+    height: 100%;
+}
+#landing-page-profile {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 50px;
+    left: 100px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0px 0px black;
+}
+
+#landing-page-content {
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    top: 150px;
+    right: 225px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+#landing-page-content-title {
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: start;
+    color: white;
+}
+#landing-page-content-title span {
+    color: rgb(103,190,113);
+}
+#landing-page-content-text {
+    width: 90%;
+    padding: 10px;
+    margin-top: -30px;
+}
+#landing-page-content-text p {
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: start;
+    width: 100%;
+    word-wrap: break-word;
+    color: white;
+    letter-spacing: 0.17em;
+}
+#landing-page-content-cv {
+    width: 100%;
+    padding-left: 10px;
+}
+#landing-page-downloads {
+    width: 250px;
+    height: 50px;
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: start;
+    font-weight: bolder;
+    padding-left: 10px;
+    background: transparent;
+    border-radius: 50px;
+    color:white;
+    border: 1px solid white;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+    overflow: hidden;
+}
+#landing-page-downloads::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 19%;
+    height: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: rgb(103,190,113);
+    transition: .3s;
+}
+#landing-page-downloads:hover {
+    background-color: rgb(103,190,113);
+}
+#landing-page-downloads:hover::after {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    width: 100%;
+    border-radius: 50px;
+    transform: scaleX(-100px);
+    background-color: transparent;
+}
+#landing-page-theme {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin:0;
+    padding:0;
+    position:absolute;
+    top: 50px;
+    right: 50px;
+    background-color: rgb(80,85,99);
+    overflow: hidden;
+    box-shadow: 0px 2px 1px 1px black;
+}
+#landing-page-theme button{ 
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#landing-page-nav {
+    width: 100px;
+    height: 300px;
+    margin:0;
+    padding:0;
+    position:absolute;
+    top: 150px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    overflow: hidden;
+}
+#landing-page-nav button {
+    background-color: rgb(80,85,99);
+    overflow: hidden;
+    box-shadow: 0px 2px 1px 1px black;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+}
+#landing-page-nav button:nth-child(1) {
+    background-color: rgb(103,190,113);
+}
